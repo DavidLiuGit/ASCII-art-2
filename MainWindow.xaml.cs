@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region references
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+#endregion
 
 namespace ASCII_Art_mk_2 {
     /// <summary>
@@ -26,9 +29,13 @@ namespace ASCII_Art_mk_2 {
 
         }
 
-        void LoadImage() {
 
-            sdf
+        /// <summary>
+        /// Load an image using file explorer
+        /// </summary>
+        void LoadImage() {
+            
+            
         }
     }
 }
