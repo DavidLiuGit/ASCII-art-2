@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Forms;
+using System.IO;
 #endregion
 
 namespace ASCII_Art_mk_2 {
@@ -34,7 +35,10 @@ namespace ASCII_Art_mk_2 {
         /// Load an image using file explorer
         /// </summary>
         void LoadImage() {
-            
+            if (FileDialogImagePath() != null) {
+                // open file
+
+            }
             
         }
 
@@ -43,7 +47,19 @@ namespace ASCII_Art_mk_2 {
         /// </summary>
         /// <returns>string of path to image file</returns>
         string FileDialogImagePath() {
-            return "bitch";
+            OpenFileDialog diag = new OpenFileDialog();
+            diag.Title = "Select image from file";
+            diag.InitialDirectory = Directory.GetCurrentDirectory();
+            diag.Multiselect = false;           // do not allow user to select multiple images
+            diag.Filter = "Image Files (*.jpg;*.jpeg;*.png;*.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
+
+            diag.ShowDialog();
+
+            if (DialogResult.HasValue && DialogResult.Value == true) {
+                return diag.FileName;
+            } else {
+                return null;                // if the file dialog doesn't properly get a file
+            }
         }
 
     }
