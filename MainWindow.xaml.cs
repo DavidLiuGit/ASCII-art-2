@@ -37,6 +37,15 @@ namespace ASCII_Art_mk_2 {
             
             
         }
+
+        /// <summary>
+        /// Opens the file dialog for user to select an image file
+        /// </summary>
+        /// <returns>string of path to image file</returns>
+        string FileDialogImagePath() {
+            return "bitch";
+        }
+
     }
 }
 

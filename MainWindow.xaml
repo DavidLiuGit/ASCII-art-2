@@ -8,7 +8,7 @@
             <ColumnDefinition Width="332*"/>
         </Grid.ColumnDefinitions>
         <TextBlock HorizontalAlignment="Left" Margin="126,110,0,0" TextWrapping="Wrap" Text="Hello." VerticalAlignment="Top" Height="93" Width="270" Cursor="None" FontFamily="Roboto Light" FontSize="60" RenderTransformOrigin="0,0.5" TextAlignment="Center" Grid.ColumnSpan="2"/>
-        <Button Content="Load Image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="105" FontFamily="Roboto Light" Click="Button_Click"/>
+        <Button x:Name="loadImage" Content="Load Image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="122" FontFamily="Roboto Light" Click="Button_Click" Height="30" Background="White"/>
 
     </Grid>
 </Window>
