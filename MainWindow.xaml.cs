@@ -27,7 +27,7 @@ namespace ASCII_Art_mk_2 {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-
+            LoadImage();
         }
 
 
