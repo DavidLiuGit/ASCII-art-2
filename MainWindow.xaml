@@ -7,8 +7,12 @@
             <ColumnDefinition Width="185*"/>
             <ColumnDefinition Width="332*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="125,81,0,0" TextWrapping="Wrap" Text="Hello." VerticalAlignment="Top" Height="93" Width="270" Cursor="None" FontFamily="Roboto Light" FontSize="60" RenderTransformOrigin="0,0.5" TextAlignment="Center" Grid.ColumnSpan="2"/>
         <Button x:Name="loadImage" Content="Load Image" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="122" FontFamily="Roboto Light" Click="Button_Click" Height="30" Background="White"/>
+        <Label x:Name="mainLabel" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="40,84,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="109" Width="426">
+            <Label.Content>
+                <AccessText x:Name="mainLabelAccess" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello." FontFamily="Roboto Light" FontSize="35" TextAlignment="Center"></AccessText>
+            </Label.Content>
+        </Label>
 
     </Grid>
 </Window>

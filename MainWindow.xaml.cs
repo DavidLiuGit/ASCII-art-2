@@ -35,9 +35,12 @@ namespace ASCII_Art_mk_2 {
         /// Load an image using file explorer
         /// </summary>
         void LoadImage() {
-            if (FileDialogImagePath() != null) {
+            string imgPath = FileDialogImagePath();
+            if (imgPath != null) {
                 // open file
-
+                mainLabel.Content = "Loading image from " + imgPath + '.';
+            } else {
+                mainLabelAccess.Text = "Please try loading another image.";
             }
             
         }
